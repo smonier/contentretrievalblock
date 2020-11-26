@@ -7,12 +7,13 @@ This module is designed to retreive anytype of Content Element filtered by categ
 2 views are availables:
 ##Isotope view with Categories and Tags Filtering
 
-    ![](./src/main/resources/images/readme/contentRetreivalBlock-filtering.png)
+![picture](./src/main/resources/images/readme/contentRetreivalBlock-filtering.png)
    
    
-    For Isotope filtering to be functional you need to add to your content element view the Categrories and Tags 
-    as follow:
+    For Isotope filtering to be functional you need to add to your content element view 
+    the Categrories and Tags as follow:
     
+```JSP View    
     <jcr:nodeProperty node="${currentNode}" var="categories" name="j:defaultCategory"/>
     <jcr:nodeProperty node="${currentNode}" var="tags" name="j:tagList"/>
     
@@ -28,9 +29,9 @@ This module is designed to retreive anytype of Content Element filtered by categ
             <c:set var="myTags" value="${myTags} ${tag.string}"/>
         </c:forEach>
     </c:if>
-    
-    
-    <div class="card  ${myCat} ${myTags}" style="width: 18rem;">
+```
+```html
+    <div class="card ${myCat} ${myTags}">
       <img class="card-img-top" src="..." alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -38,9 +39,21 @@ This module is designed to retreive anytype of Content Element filtered by categ
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
-    
+```    
+---
 ##OWL Carousel
 
-    ![](./src/main/resources/images/readme/contentRetreivalBlock-owlcarousel.png)
+![picture](./src/main/resources/images/readme/contentRetreivalBlock-owlcarousel.png)
 
+---
+###Query Parameter
 
+1. Type of Content Element
+2. Sort Criteria (Creation date or  Modification date or Publication date)
+3. Sort Direction (Ascending or Descending)
+4. Number of maximum results 
+5. Select the starting node
+6. Select Categories Filters
+7. Select the Content Element View (display)
+8. Select Categories to Exclude from Query
+9. Select the Category to display at first page load
