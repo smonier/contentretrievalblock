@@ -3,14 +3,26 @@
 
 
 This module is designed to retreive anytype of Content Element filtered by categories.
+---
+## Query Parameters
 
-2 views are availables:
-## Isotope view with Categories and Tags Filtering
+1. Type of Content Element
+2. Sort Criteria (Creation date or  Modification date or Publication date)
+3. Sort Direction (Ascending or Descending)
+4. Number of maximum results 
+5. Select the starting node
+6. Select Categories Filters
+7. Select the Content Element View (display)
+8. Select Categories to Exclude from Query
+9. Select the Category to display at first page load
+
+## 2 views are availables:
+### Isotope view with Categories and Tags Filtering
 
 ![picture](./src/main/resources/images/readme/contentRetreivalBlock-filtering.png)
    
    
-    For Isotope filtering to be functional you need to add to your content element view 
+    For Isotope filtering to be functional you need to add to your content element top class  
     the Categrories and Tags as follow:
     
 ```JSP View    
@@ -41,19 +53,7 @@ This module is designed to retreive anytype of Content Element filtered by categ
     </div>
 ```    
 ---
-## OWL Carousel
+### OWL Carousel
 
 ![picture](./src/main/resources/images/readme/contentRetreivalBlock-owlcarousel.png)
 
----
-### Query Parameter
-
-1. Type of Content Element
-2. Sort Criteria (Creation date or  Modification date or Publication date)
-3. Sort Direction (Ascending or Descending)
-4. Number of maximum results 
-5. Select the starting node
-6. Select Categories Filters
-7. Select the Content Element View (display)
-8. Select Categories to Exclude from Query
-9. Select the Category to display at first page load
