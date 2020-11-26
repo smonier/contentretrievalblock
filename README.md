@@ -2,7 +2,7 @@
 
 
 
-This module is designed to retreive anytype of Content Element filtered by categories.
+This Jahia jContent V8 module is designed to retreive anytype of Content Element filtered by categories.
 ---
 ## Query Parameters
 
