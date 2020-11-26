@@ -1,0 +1,23 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<crbnt = 'http://www.jahia.org/contentRetreivalBlock/nt/2.0'>
+<crbmix = 'http://www.jahia.org/contentRetreivalBlock/mix/2.0'>
+
+
+[crbmix:contentRetreivalBlock] > jmix:droppableContent, jmix:editorialContent mixin
+
+[crbnt:heading] > jnt:content, jmix:bindedComponent, jmix:editorialContent, crbmix:contentRetreivalBlock
+- j:type (string, choicelist[subnodetypes = 'jnt:page,jmix:basicContent,jmix:editorialContent,jmix:retrievableContent,jmix:structuredContent',resourceBundle]) indexed=no mandatory
+
+[crbnt:contentListBlock] > jnt:content, mix:title, crbmix:contentRetreivalBlock
+- bannerText (string, richtext) internationalized
+- maxItems (long) = 10 indexed=no
+- j:type (string, choicelist[subnodetypes = 'jnt:page,jmix:basicContent,jmix:editorialContent,jmix:retrievableContent,jmix:structuredContent',resourceBundle]) indexed=no mandatory
+- j:startNode (weakreference)
+- filter (string, choicelist[resourceBundle])  < 'Tags', 'Categories', 'Both', 'None'
+- j:criteria (string,choicelist[resourceBundle]) = 'jcr:created' autocreated indexed=no < 'jcr:created','jcr:lastModified','j:lastPublished'
+- j:sortDirection (string, choicelist[resourceBundle]) = 'asc' autocreated indexed=no < 'asc','desc'
+- j:selectedCat (weakreference, category[autoSelectParent=false]) multiple
+- j:catFilters (weakreference, category[autoSelectParent=false]) multiple
+- j:catNoFilters (weakreference, category[autoSelectParent=false]) multiple
+- j:subNodesView (string, choicelist[templates=subnodes,resourceBundle,image,dependentProperties='j:type']) nofulltext itemtype = layout

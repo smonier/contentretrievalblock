@@ -1,0 +1,13 @@
+{
+  "label": {
+    "settings": {
+      "title": "contentRetrievalBlock setting"
+    },
+    "action": {
+      "title": "contentRetrievalBlock - How to extend the ui ?"
+    },
+    "appsAccordion": {
+      "title": "contentRetrievalBlock"
+    }
+  }
+}
