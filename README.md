@@ -5,7 +5,7 @@
 This module is designed to retreive anytype of Content Element filtered by categories.
 
 2 views are availables:
-##Isotope view with Categories and Tags Filtering
+## Isotope view with Categories and Tags Filtering
 
 ![picture](./src/main/resources/images/readme/contentRetreivalBlock-filtering.png)
    
@@ -41,12 +41,12 @@ This module is designed to retreive anytype of Content Element filtered by categ
     </div>
 ```    
 ---
-##OWL Carousel
+## OWL Carousel
 
 ![picture](./src/main/resources/images/readme/contentRetreivalBlock-owlcarousel.png)
 
 ---
-###Query Parameter
+### Query Parameter
 
 1. Type of Content Element
 2. Sort Criteria (Creation date or  Modification date or Publication date)
